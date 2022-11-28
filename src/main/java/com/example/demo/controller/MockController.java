@@ -27,7 +27,7 @@ public class MockController {
         Date date = new Date(System.currentTimeMillis());
         String time = format.format(date);
         return new ArrayList<Map<String, String>>() {{
-            add(new HashMap<String, String>() {{put("time", time);put("login", name);}});
+            add(new TreeMap<String, String>() {{put("login", name);put("time", time);}});
         }};
     }
 
