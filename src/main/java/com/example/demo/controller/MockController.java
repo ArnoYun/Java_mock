@@ -11,7 +11,7 @@ import java.util.*;
 
 @RestController
 @RequestMapping
-public class MockController { 
+public class MockController {
 
     @GetMapping(value = "get")
     public List<Map<String, String>> list(){
